@@ -9,7 +9,7 @@ output: html_document
 This markdown document explains how to run/test the script I have created for
 **R Programming Assignment 2**.
 
-Noted that the sample printouts (or things that get printed into the output) 
+Please note that the sample printouts (or things that get printed into the output) 
 are denoted by `#>`.
 
 
