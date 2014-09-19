@@ -13,20 +13,20 @@ Noted that the sample printouts (or things that get printed into the output)
 are denoted by `#>`.
 
 
-1. Read the R script `cachematrix.R`.
+* Read the R script `cachematrix.R`.
 
 ```
 source("cachematrix.R");
 ```
 
-2. Create the square matrix during the call to `makeCacheMatrix()`.
+* Create the square matrix during the call to `makeCacheMatrix()`.
 
 ```
 m <- makeCacheMatrix( matrix(c(5, 4, 3, 12, 14, 17, 18, 19, 2), 
                                 nrow = 3, ncol = 3) );
 ```
 
-3. Check for functions available to matrix `m`.
+* Check for functions available to matrix `m`.
 
 ```
 summary(m);
@@ -37,7 +37,7 @@ summary(m);
 #> getInverse 1      -none- function
 ```
 
-4. Get the matrix
+* Get the matrix
 
 ```
 m$get();
@@ -47,7 +47,7 @@ m$get();
 #> [3,]    3   17    2
 ```
 
-5. Get the Inverse of matrix `m` using `cacheSolve(m)`.
+* Get the Inverse of matrix `m` using `cacheSolve(m)`.
 
 ```
 cacheSolve(m);
@@ -57,7 +57,7 @@ cacheSolve(m);
 #> [3,] -0.06205251  0.1169451 -0.05250597
 ```
 
-6. Re-run `cacheSolve(m)` to check if the cached value was used.
+* Re-run `cacheSolve(m)` to check if the cached value was used.
 
 ```
 cacheSolve(m);
@@ -76,19 +76,19 @@ Alternatively, you may create the matrix by calling the `makeCacheMatrix` withou
 the arguments.  Just use the `set` function to create the matrix.
 
 
-1. Read the R script `cachematrix.R`.
+* Read the R script `cachematrix.R`.
 
 ```
 source("cachematrix.R");
 ```
 
-2. Call `makeCacheMatrix()` function without arguments.
+* Call `makeCacheMatrix()` function without arguments.
 
 ```
 m <- makeCacheMatrix();
 ```
 
-3. Check for functions available to matrix `m`.
+* Check for functions available to matrix `m`.
 
 ```
 summary(m);
@@ -99,14 +99,14 @@ summary(m);
 #> getInverse 1      -none- function
 ```
 
-4. Create the square matrix using the `set` function.
+* Create the square matrix using the `set` function.
 
 ```
 m$set( matrix(c(5, 4, 3, 12, 14, 17, 18, 19, 2), 
                                 nrow = 3, ncol = 3) );
 ```
 
-5. Verify that the square matrix has been created/set.
+* Verify that the square matrix has been created/set.
 
 ```
 m$get();
@@ -116,7 +116,7 @@ m$get();
 #> [3,]    3   17    2
 ```
 
-5. Get the Inverse of matrix `m` using `cacheSolve(m)`.
+* Get the Inverse of matrix `m` using `cacheSolve(m)`.
 
 ```
 cacheSolve(m);
@@ -126,7 +126,7 @@ cacheSolve(m);
 #> [3,] -0.06205251  0.1169451 -0.05250597
 ```
 
-6. Re-run `cacheSolve(m)` to check if the cached value was used.
+* Re-run `cacheSolve(m)` to check if the cached value was used.
 
 ```
 cacheSolve(m);
