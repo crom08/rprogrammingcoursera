@@ -1,3 +1,8 @@
+### Note:
+__Please read HowTo.md for steps on how to test/run the R script.__
+
+---
+
 ### Introduction
 
 This second programming assignment will require you to write an R
